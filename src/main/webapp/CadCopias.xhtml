@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Cadastro de copias </title>
+    </h:head>
+    <h:body>
+         <h:form>
+            <p:panelGrid columns="2">
+                
+                <p:outputLabel value="Titulo" />
+                <p:inputText value="#{guiCopia.copia.titulo}"/>
+                             
+                <p:outputLabel value="descricao" />
+                <p:inputText value="#{guiCopia.copia.descricao}"/>
+                 
+                <p:outputLabel value="Codigo inscricao da midia" />
+                <p:inputText value="#{guiCopia.copia.cod_insc_midia}"/>
+                             
+                <p:outputLabel value="Nome do diretor" />
+                <p:inputText value="#{guiCopia.copia.nome_diretor}"/>
+                
+                <p:outputLabel value="Artista principal" />
+                <p:inputText value="#{guiCopia.copia.artista_princ}"/>
+                
+                <p:outputLabel value="Genero" />
+                <p:inputText value="#{guiCopia.copia.genero}"/>
+                
+                <p:outputLabel value="Data arquivacao" />
+                <p:inputText value="#{guiCopia.copia.data_arquivacao}"/>
+                
+                <p:commandButton value="Gravar" action="#{guiCopia.gravarCopia()}"/>
+                 
+        </p:panelGrid> 
+    </h:body>
+</html>
+
