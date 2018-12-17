@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Emprestimos</title>
+    </h:head>
+    <h:body>
+         <h:form>
+            <p:commandButton value="incluir" action="#{guiEmprestimo.novaEmprestimo()}"/>
+
+            <p:dataTable var="c" value="#{guiEmprestimo.emprestimos}" >
+                <p:column headerText="Codigo do sacio">
+                    <h:outputText value="#{c.insc_socio}" />
+                </p:column>
+
+                <p:column headerText="data do Emprestimo">
+                    <h:outputText value="#{c.data_emprestimo}" />
+                </p:column>
+
+                <p:column headerText="Data devolução">
+                    <h:outputText value="#{c.data_devolucao}" />
+                </p:column>
+
+                 
+            </p:dataTable>
+
+    </h:body>
+</html>
+

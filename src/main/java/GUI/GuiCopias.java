@@ -8,6 +8,7 @@ import java.io.Serializable;
 import java.util.List;
 import javax.persistence.PersistenceContext;
 import model.Copias;
+import model.Emprestimo;
 
 
 @Named(value = "guiCopias")
@@ -18,8 +19,8 @@ public class GuiCopias implements Serializable {
     private List<Copias>copias;
     private Copias copia;
     private Boolean incluindo;
-    
-    
+    private List<Emprestimo>emprestimos;  
+ 
     @PersistenceContext
     CopiasDAO daocopia;
 
